@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML、CSS、JSを理解するための学習教材</title>
+</head>
+<body>
+
+  <header>
+    <h1>HTML、CSS、JSを理解するための学習教材</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">トップ・概論</a></li>
+        <li><a href="exercise.html">演習</a></li>
+        <li><a href="contact.html">お問合せ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="intro">
+      <h2>このサイトについて</h2>
+
+      <section>
+        <h3>サイトの目的</h3>
+        <p>Webサイトを作るための3つの技術（HTML、CSS、JavaScript）を理解する</p>
+        <p>難しい専門用語を使わず、初心者でもわかりやすく解説</p>
+        <p>実際に手を動かしながら学べる演習も用意</p>
+      </section>
+
+      <section>
+        <h3>対象者</h3>
+        <ul>
+          <li>これからWebサイト制作を学びたい人</li>
+          <li>HTML、CSS、JavaScriptの名前は聞いたことがあるが、違いがわからない人</li>
+          <li>プログラミング未経験者</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>学習の流れ</h3>
+        <ol>
+          <li>まずこのページで全体像を把握する</li>
+          <li>各技術の基礎を理解する</li>
+          <li>演習ページで実際に作ってみる</li>
+        </ol>
+      </section>
+
+      <section>
+        <h3>コンテンツ</h3>
+        <ul>
+          <li><a href="exercise.html">演習</a>：実際にWebサイトを作る手順を学ぶ</li>
+          <li><a href="contact.html">お問合せ</a>：質問やレクチャー依頼はこちら</li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="overview">
+      <h2>全体像を把握する</h2>
+
+      <section>
+        <h3>Webページが表示されるまで</h3>
+        <ol>
+          <li>ユーザーがブラウザでURLを入力する</li>
+          <li>サーバーからHTML、CSS、JavaScriptファイルが送られてくる</li>
+          <li>ブラウザがこれらのファイルを読み込み、画面に表示する</li>
+        </ol>
+        <p>この3つのファイルがWebページを構成している</p>
+      </section>
+
+      <section>
+        <h3>3つの技術の役割</h3>
+        <dl>
+          <dt>HTML</dt>
+          <dd>ページの「内容」と「構造」を担当。文章、画像、リンクなど、何を載せるかを決める。見出し、段落、リストなど、内容の構造を決める。</dd>
+
+          <dt>CSS</dt>
+          <dd>ページの「見た目」を担当。色、フォント、サイズを決める。レイアウト（配置）を決める。装飾やアニメーションを加える。</dd>
+
+          <dt>JavaScript</dt>
+          <dd>ページの「動き」を担当。ボタンをクリックしたときの処理。入力内容のチェック。ページ内容の動的な変更。</dd>
+        </dl>
+      </section>
+
+      <section>
+        <h3>例え話で理解する</h3>
+
+        <h4>家に例えると</h4>
+        <ul>
+          <li>HTML = 骨組み・間取り（構造）</li>
+          <li>CSS = 壁紙・家具・インテリア（見た目）</li>
+          <li>JavaScript = 電気・水道・家電（機能・動き）</li>
+        </ul>
+
+        <h4>人間に例えると</h4>
+        <ul>
+          <li>HTML = 骨格・体の構造</li>
+          <li>CSS = 服装・髪型・メイク</li>
+          <li>JavaScript = 動作・行動</li>
+        </ul>
+      </section>
+
+      <aside>
+        <h4>参考資料</h4>
+        <ul>
+          <li>書籍：（後日追加）</li>
+          <li>URL：（後日追加）</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="relationship">
+      <h2>それぞれの関係を理解する</h2>
+
+      <section>
+        <h3>3つの技術の連携</h3>
+        <ul>
+          <li>HTMLが土台となり、その上にCSSとJavaScriptが働きかける</li>
+          <li>HTMLだけでもページは表示できる（ただし見た目は質素）</li>
+          <li>CSSはHTMLの要素を装飾する</li>
+          <li>JavaScriptはHTMLの要素を操作する</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>ファイルの関係</h3>
+        <ul>
+          <li>HTMLファイル（.html）がメインのファイル</li>
+          <li>CSSファイル（.css）をHTMLから読み込む</li>
+          <li>JavaScriptファイル（.js）をHTMLから読み込む</li>
+          <li>1つのHTMLに複数のCSS、JSを読み込むことも可能</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>図解：3つの技術の関係図</h3>
+        <p>（図を挿入予定）</p>
+        <p>HTMLを中心に、CSSとJavaScriptが連携する様子を視覚的に表現</p>
+      </section>
+
+      <aside>
+        <h4>参考資料</h4>
+        <ul>
+          <li>書籍：（後日追加）</li>
+          <li>URL：（後日追加）</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="html">
+      <h2>HTMLを理解する</h2>
+
+      <section>
+        <h3>HTMLとは何か</h3>
+        <p>HyperText Markup Language の略</p>
+        <p>Webページの内容と構造を記述するための言語</p>
+        <p>「タグ」と呼ばれる記号で内容を囲んで構造を作る</p>
+        <p>ブラウザがHTMLを読み取り、画面に表示する</p>
+      </section>
+
+      <section>
+        <h3>タグの基本</h3>
+        <p>タグは <code>&lt;</code> と <code>&gt;</code> で囲まれた記号</p>
+        <p>開始タグ <code>&lt;p&gt;</code> と終了タグ <code>&lt;/p&gt;</code> でペアになる</p>
+        <p>例：<code>&lt;p&gt;これは段落です&lt;/p&gt;</code></p>
+      </section>
+
+      <section>
+        <h3>基本的なタグ</h3>
+
+        <h4>文書の構造</h4>
+        <dl>
+          <dt><code>&lt;html&gt;</code></dt>
+          <dd>HTML文書全体を囲む</dd>
+
+          <dt><code>&lt;head&gt;</code></dt>
+          <dd>ページの情報（タイトル、読み込むファイルなど）</dd>
+
+          <dt><code>&lt;body&gt;</code></dt>
+          <dd>ページに表示される内容</dd>
+        </dl>
+
+        <h4>見出し</h4>
+        <dl>
+          <dt><code>&lt;h1&gt;</code> ～ <code>&lt;h6&gt;</code></dt>
+          <dd>見出しを作る。h1が最も大きく重要、h6が最も小さい。ページには通常h1は1つだけ使用。</dd>
+        </dl>
+
+        <h4>段落・テキスト</h4>
+        <dl>
+          <dt><code>&lt;p&gt;</code></dt>
+          <dd>段落を作る</dd>
+
+          <dt><code>&lt;br&gt;</code></dt>
+          <dd>改行（終了タグなし）</dd>
+
+          <dt><code>&lt;strong&gt;</code></dt>
+          <dd>重要なテキスト（太字）</dd>
+
+          <dt><code>&lt;em&gt;</code></dt>
+          <dd>強調テキスト（斜体）</dd>
+        </dl>
+
+        <h4>リンク</h4>
+        <dl>
+          <dt><code>&lt;a href="URL"&gt;</code></dt>
+          <dd>リンクを作る。href属性にリンク先のURLを指定。別ページ、外部サイト、ページ内リンクが可能。</dd>
+        </dl>
+
+        <h4>画像</h4>
+        <dl>
+          <dt><code>&lt;img src="パス" alt="説明"&gt;</code></dt>
+          <dd>画像を表示する。src属性に画像ファイルのパスを指定。alt属性に画像の説明を入れる（アクセシビリティのため必須）。</dd>
+        </dl>
+
+        <h4>リスト</h4>
+        <dl>
+          <dt><code>&lt;ul&gt;</code></dt>
+          <dd>箇条書きリスト（順序なし）</dd>
+
+          <dt><code>&lt;ol&gt;</code></dt>
+          <dd>番号付きリスト（順序あり）</dd>
+
+          <dt><code>&lt;li&gt;</code></dt>
+          <dd>リストの各項目</dd>
+        </dl>
+
+        <h4>グループ化</h4>
+        <dl>
+          <dt><code>&lt;div&gt;</code></dt>
+          <dd>ブロック要素のグループ化（縦に並ぶ）</dd>
+
+          <dt><code>&lt;span&gt;</code></dt>
+          <dd>インライン要素のグループ化（横に並ぶ）</dd>
+        </dl>
+      </section>
+
+      <section>
+        <h3>セマンティックHTML</h3>
+        <p>意味のあるタグを使うことで、構造が明確になる</p>
+        <p>検索エンジンやスクリーンリーダーが内容を理解しやすくなる</p>
+        <p><strong>主なセマンティックタグ</strong></p>
+        <ul>
+          <li><code>&lt;header&gt;</code> ：ヘッダー領域</li>
+          <li><code>&lt;nav&gt;</code> ：ナビゲーション</li>
+          <li><code>&lt;main&gt;</code> ：メインコンテンツ</li>
+          <li><code>&lt;article&gt;</code> ：独立した記事</li>
+          <li><code>&lt;section&gt;</code> ：セクション</li>
+          <li><code>&lt;footer&gt;</code> ：フッター領域</li>
+        </ul>
+      </section>
+
+      <aside>
+        <h4>参考資料</h4>
+        <ul>
+          <li>書籍：（後日追加）</li>
+          <li>URL：（後日追加）</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="css">
+      <h2>CSSを理解する</h2>
+
+      <section>
+        <h3>CSSとは何か</h3>
+        <p>Cascading Style Sheets の略</p>
+        <p>HTMLで作った構造に見た目を与える言語</p>
+        <p>色、サイズ、配置、アニメーションなどを指定できる</p>
+        <p>HTMLと分離することで、管理しやすくなる</p>
+      </section>
+
+      <section>
+        <h3>CSSの基本的な書き方</h3>
+        <pre><code>セレクタ {
+  プロパティ: 値;
+}</code></pre>
+        <dl>
+          <dt>セレクタ</dt>
+          <dd>どの要素に適用するか（例：p, h1, .クラス名）</dd>
+
+          <dt>プロパティ</dt>
+          <dd>何を変えるか（例：color, font-size）</dd>
+
+          <dt>値</dt>
+          <dd>どのように変えるか（例：red, 16px）</dd>
+        </dl>
+      </section>
+
+      <section>
+        <h3>CSSの適用方法</h3>
+
+        <h4>インラインスタイル</h4>
+        <p>HTMLタグに直接style属性を書く</p>
+        <p>例：<code>&lt;p style="color: red;"&gt;赤い文字&lt;/p&gt;</code></p>
+        <p>手軽だが、管理が大変になるため非推奨</p>
+
+        <h4>styleタグ</h4>
+        <p>HTMLファイルの<code>&lt;head&gt;</code>内に<code>&lt;style&gt;</code>タグを書く</p>
+        <p>1つのHTMLファイル内でのみ有効</p>
+        <p>小規模なページや学習用に便利</p>
+
+        <h4>外部ファイル（推奨）</h4>
+        <p>別ファイル（.css）に記述</p>
+        <p><code>&lt;link rel="stylesheet" href="ファイル名.css"&gt;</code> で読み込む</p>
+        <p>複数のHTMLで同じCSSを使える</p>
+        <p>管理しやすく、実務で最も使われる</p>
+      </section>
+
+      <section>
+        <h3>基本的なプロパティ</h3>
+
+        <h4>色・背景</h4>
+        <dl>
+          <dt>color</dt>
+          <dd>文字の色</dd>
+
+          <dt>background-color</dt>
+          <dd>背景色</dd>
+
+          <dt>background-image</dt>
+          <dd>背景画像</dd>
+        </dl>
+        <p>色の指定方法：色名（red）、16進数（#ff0000）、RGB（rgb(255,0,0)）</p>
+
+        <h4>フォント</h4>
+        <dl>
+          <dt>font-size</dt>
+          <dd>文字サイズ（px, em, rem）</dd>
+
+          <dt>font-family</dt>
+          <dd>フォントの種類</dd>
+
+          <dt>font-weight</dt>
+          <dd>文字の太さ（normal, bold, 数値）</dd>
+
+          <dt>line-height</dt>
+          <dd>行の高さ</dd>
+        </dl>
+
+        <h4>余白</h4>
+        <dl>
+          <dt>margin</dt>
+          <dd>要素の外側の余白</dd>
+
+          <dt>padding</dt>
+          <dd>要素の内側の余白</dd>
+        </dl>
+        <p>上下左右個別に指定可能（margin-top, padding-leftなど）</p>
+
+        <h4>ボックスモデル</h4>
+        <p>すべてのHTML要素は「箱（ボックス）」として扱われる</p>
+        <p>内側から：内容 → padding → border → margin</p>
+        <dl>
+          <dt>width, height</dt>
+          <dd>箱のサイズを指定</dd>
+
+          <dt>border</dt>
+          <dd>枠線を指定</dd>
+        </dl>
+      </section>
+
+      <aside>
+        <h4>参考資料</h4>
+        <ul>
+          <li>書籍：（後日追加）</li>
+          <li>URL：（後日追加）</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="javascript">
+      <h2>JavaScriptを理解する</h2>
+
+      <section>
+        <h3>JavaScriptとは何か</h3>
+        <p>Webページに動きをつけるためのプログラミング言語</p>
+        <p>ブラウザ上で動作する（クライアントサイド）</p>
+        <p>ユーザーの操作に反応して、ページを動的に変更できる</p>
+      </section>
+
+      <section>
+        <h3>JavaScriptでできること</h3>
+
+        <h4>ユーザー操作への反応</h4>
+        <ul>
+          <li>ボタンクリックで処理を実行</li>
+          <li>マウスオーバーで表示を変える</li>
+          <li>キーボード入力を検知</li>
+        </ul>
+
+        <h4>ページ内容の動的変更</h4>
+        <ul>
+          <li>テキストや画像を書き換える</li>
+          <li>要素を追加・削除する</li>
+          <li>スタイル（CSS）を変更する</li>
+        </ul>
+
+        <h4>データの処理</h4>
+        <ul>
+          <li>入力フォームの値をチェック</li>
+          <li>計算処理</li>
+          <li>データの保存・読み込み</li>
+        </ul>
+
+        <h4>その他</h4>
+        <ul>
+          <li>アニメーションの制御</li>
+          <li>外部データの取得（API連携）</li>
+          <li>複雑なWebアプリケーションの構築</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>基本的な文法</h3>
+
+        <h4>変数</h4>
+        <p>データを保存する箱</p>
+        <pre><code>let 変数名 = 値;</code></pre>
+        <p>例：<code>let message = "こんにちは";</code></p>
+
+        <h4>関数</h4>
+        <p>処理をまとめたもの</p>
+        <pre><code>function 関数名() {
+  処理
+}</code></pre>
+        <p>例：</p>
+        <pre><code>function greet() {
+  alert("こんにちは！");
+}</code></pre>
+
+        <h4>イベント</h4>
+        <p>ユーザーの操作を検知する仕組み</p>
+        <p>クリック、マウス移動、キー入力など</p>
+        <p>例：ボタンをクリックしたら関数を実行</p>
+      </section>
+
+      <section>
+        <h3>この講座での位置づけ</h3>
+        <p>JavaScriptは奥が深く、この講座では基礎の紹介のみ</p>
+        <p>まずはHTML・CSSをしっかり理解することが大切</p>
+        <p>興味がある方は専門の教材で学習を</p>
+      </section>
+
+      <aside>
+        <h4>参考資料</h4>
+        <ul>
+          <li>書籍：（後日追加）</li>
+          <li>URL：（後日追加）</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="frontend-backend">
+      <h2>[補足] フロントエンドとバックエンド</h2>
+
+      <section>
+        <h3>フロントエンドとは</h3>
+        <ul>
+          <li>ユーザーの目に見える部分</li>
+          <li>ブラウザ上で動作する</li>
+          <li>使用技術：HTML、CSS、JavaScript</li>
+          <li>デザインや使いやすさ（UI/UX）を担当</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>バックエンドとは</h3>
+        <ul>
+          <li>ユーザーの目に見えない部分</li>
+          <li>サーバー上で動作する</li>
+          <li>使用技術：PHP、Python、Ruby、Node.jsなど</li>
+          <li>データベース、ユーザー認証、ビジネスロジックを担当</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>両者の違いと役割分担</h3>
+        <dl>
+          <dt>フロントエンド：見た目と操作性</dt>
+          <dd>画面のデザイン、ボタンやフォームの動作、ユーザーとの対話</dd>
+
+          <dt>バックエンド：データと処理</dt>
+          <dd>ユーザー情報の管理、投稿データの保存、検索や計算処理</dd>
+        </dl>
+      </section>
+
+      <section>
+        <h3>連携の例</h3>
+        <ol>
+          <li>ユーザーがログインボタンを押す（フロントエンド）</li>
+          <li>入力されたID・パスワードをサーバーに送信</li>
+          <li>サーバーでデータベースを確認（バックエンド）</li>
+          <li>結果をフロントエンドに返す</li>
+          <li>画面を更新してログイン完了を表示（フロントエンド）</li>
+        </ol>
+      </section>
+
+      <section>
+        <h3>この講座で扱う範囲</h3>
+        <p>この講座ではフロントエンドのみを扱う</p>
+        <p>HTML、CSS、JavaScriptの基礎を学習</p>
+        <p>バックエンドに興味がある方は、別途学習が必要</p>
+      </section>
+
+      <aside>
+        <h4>参考資料</h4>
+        <ul>
+          <li>書籍：（後日追加）</li>
+          <li>URL：（後日追加）</li>
+        </ul>
+      </aside>
+    </section>
+
+  </main>
+
+  <footer>
+    <nav>
+      <a href="contact.html">お問合せ</a>
+    </nav>
+    <p>&copy; HTML、CSS、JSを理解するための学習教材</p>
+  </footer>
+
+</body>
+</html>

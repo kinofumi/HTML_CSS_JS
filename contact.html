@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問合せ | HTML、CSS、JSを理解するための学習教材</title>
+</head>
+<body>
+
+  <header>
+    <h1>HTML、CSS、JSを理解するための学習教材</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">トップ・概論</a></li>
+        <li><a href="exercise.html">演習</a></li>
+        <li><a href="contact.html">お問合せ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <nav aria-label="パンくずリスト">
+      <ol>
+        <li><a href="index.html">トップ</a></li>
+        <li>お問合せ</li>
+      </ol>
+    </nav>
+
+    <h2>お問合せ</h2>
+
+    <section>
+      <p>ご質問やご依頼をお受けしています</p>
+      <p>下記フォームよりお気軽にお問合せください</p>
+
+      <form action="#" method="post">
+        <div>
+          <label for="type">お問合せ種類</label>
+          <select id="type" name="type" required>
+            <option value="">選択してください</option>
+            <option value="lecture">レクチャーの依頼</option>
+            <option value="question">内容についての質問</option>
+            <option value="other">その他</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="name">お名前</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div>
+          <label for="email">メールアドレス</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+          <label for="message">お問合せ内容</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <div>
+          <button type="submit">送信する</button>
+        </div>
+      </form>
+
+      <aside>
+        <h3>ご注意</h3>
+        <ul>
+          <li>返信には数日いただく場合があります</li>
+          <li>いただいた個人情報は、お問合せへの対応のみに使用します</li>
+        </ul>
+      </aside>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; HTML、CSS、JSを理解するための学習教材</p>
+  </footer>
+
+</body>
+</html>
