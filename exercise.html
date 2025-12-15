@@ -4,294 +4,431 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>演習 | HTML、CSS、JSを理解するための学習教材</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
   <header>
-    <h1>HTML、CSS、JSを理解するための学習教材</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">トップ・概論</a></li>
-        <li><a href="exercise.html">演習</a></li>
-        <li><a href="contact.html">お問合せ</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">HTML・CSS・JS学習教材</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">トップ・概論</a></li>
+            <li class="nav-item"><a class="nav-link active" href="exercise.html">演習</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">お問合せ</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
   <main>
+    <div class="container py-4">
 
-    <nav aria-label="パンくずリスト">
-      <ol>
-        <li><a href="index.html">トップ</a></li>
-        <li>演習</li>
-      </ol>
-    </nav>
+      <nav aria-label="パンくずリスト">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">トップ</a></li>
+          <li class="breadcrumb-item active">演習</li>
+        </ol>
+      </nav>
 
-    <h2>演習</h2>
+      <h1 class="mb-4">演習</h1>
 
-    <section id="exercise-intro">
-      <h3>この演習について</h3>
-      <p>実際にWebサイトを1から作成する手順を学ぶ</p>
-      <p>企画から完成まで、9つのステップで進める</p>
-      <p>各ステップを順番に進めることで、自然とスキルが身につく</p>
+      <section id="exercise-intro" class="mb-5">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h2 class="card-title h4">この演習について</h2>
+            <p>実際にWebサイトを1から作成する手順を学ぶ</p>
+            <p>企画から完成まで、9つのステップで進める</p>
+            <p class="mb-0">各ステップを順番に進めることで、自然とスキルが身につく</p>
+          </div>
+        </div>
 
-      <h3>必要な準備</h3>
-      <ul>
-        <li>パソコン（Windows / Mac どちらでも可）</li>
-        <li>テキストエディタ（メモ帳でも可、VS Codeを推奨）</li>
-        <li>ブラウザ（Chrome、Firefox、Edgeなど）</li>
-      </ul>
-    </section>
+        <div class="card">
+          <div class="card-header">必要な準備</div>
+          <div class="card-body">
+            <ul class="mb-0">
+              <li>パソコン（Windows / Mac どちらでも可）</li>
+              <li>テキストエディタ（メモ帳でも可、VS Codeを推奨）</li>
+              <li>ブラウザ（Chrome、Firefox、Edgeなど）</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-    <section id="step1">
-      <h3>ステップ1：企画を考える</h3>
+      <section class="mb-5">
+        <h2 class="border-bottom pb-2 mb-4">ステップ一覧</h2>
 
-      <h4>目的</h4>
-      <p>どんなWebサイトを作るか、テーマと目的を決める</p>
+        <div class="accordion" id="stepsAccordion">
 
-      <h4>やること</h4>
-      <ul>
-        <li>サイトのテーマを決める（趣味、お店、イベント紹介など）</li>
-        <li>誰に見てもらいたいか（ターゲット）を考える</li>
-        <li>サイトで何を伝えたいかを考える</li>
-      </ul>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#step1">
+                <span class="badge bg-primary me-2">1</span> 企画を考える
+              </button>
+            </h3>
+            <div id="step1" class="accordion-collapse collapse show" data-bs-parent="#stepsAccordion">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h4 class="h6">目的</h4>
+                    <p>どんなWebサイトを作るか、テーマと目的を決める</p>
 
-      <h4>ポイント</h4>
-      <ul>
-        <li>最初はシンプルなテーマがおすすめ</li>
-        <li>自分の好きなこと、詳しいことをテーマにすると作りやすい</li>
-        <li>完璧を目指さず、まずは作ってみることが大切</li>
-      </ul>
+                    <h4 class="h6">やること</h4>
+                    <ul>
+                      <li>サイトのテーマを決める（趣味、お店、イベント紹介など）</li>
+                      <li>誰に見てもらいたいか（ターゲット）を考える</li>
+                      <li>サイトで何を伝えたいかを考える</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h4 class="h6">ポイント</h4>
+                    <ul>
+                      <li>最初はシンプルなテーマがおすすめ</li>
+                      <li>自分の好きなこと、詳しいことをテーマにすると作りやすい</li>
+                      <li>完璧を目指さず、まずは作ってみることが大切</li>
+                    </ul>
 
-      <h4>成果物</h4>
-      <ul>
-        <li>サイトのテーマ</li>
-        <li>ターゲット</li>
-        <li>伝えたいこと</li>
-      </ul>
-    </section>
+                    <h4 class="h6">成果物</h4>
+                    <ul class="mb-0">
+                      <li>サイトのテーマ</li>
+                      <li>ターゲット</li>
+                      <li>伝えたいこと</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    <section id="step2">
-      <h3>ステップ2：構成をざっくり考える</h3>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step2">
+                <span class="badge bg-primary me-2">2</span> 構成をざっくり考える
+              </button>
+            </h3>
+            <div id="step2" class="accordion-collapse collapse" data-bs-parent="#stepsAccordion">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h4 class="h6">目的</h4>
+                    <p>サイト全体の構成（どんなページが必要か）を決める</p>
 
-      <h4>目的</h4>
-      <p>サイト全体の構成（どんなページが必要か）を決める</p>
+                    <h4 class="h6">やること</h4>
+                    <ul>
+                      <li>必要なページを洗い出す</li>
+                      <li>ページ同士の関係を考える</li>
+                      <li>サイトマップ（サイトの地図）を作る</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h4 class="h6">ポイント</h4>
+                    <ul>
+                      <li>まずは最小限のページから始める</li>
+                      <li>トップページ、詳細ページ、お問合せ程度で十分</li>
+                      <li>後から追加できるので、最初から完璧を目指さない</li>
+                    </ul>
 
-      <h4>やること</h4>
-      <ul>
-        <li>必要なページを洗い出す</li>
-        <li>ページ同士の関係を考える</li>
-        <li>サイトマップ（サイトの地図）を作る</li>
-      </ul>
+                    <h4 class="h6">成果物</h4>
+                    <ul class="mb-0">
+                      <li>ページの一覧</li>
+                      <li>簡単なサイトマップ</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <h4>ポイント</h4>
-      <ul>
-        <li>まずは最小限のページから始める</li>
-        <li>トップページ、詳細ページ、お問合せ程度で十分</li>
-        <li>後から追加できるので、最初から完璧を目指さない</li>
-      </ul>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step3">
+                <span class="badge bg-primary me-2">3</span> ページ構成を考える
+              </button>
+            </h3>
+            <div id="step3" class="accordion-collapse collapse" data-bs-parent="#stepsAccordion">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h4 class="h6">目的</h4>
+                    <p>各ページに必要な要素を洗い出す</p>
 
-      <h4>成果物</h4>
-      <ul>
-        <li>ページの一覧</li>
-        <li>簡単なサイトマップ</li>
-      </ul>
-    </section>
+                    <h4 class="h6">やること</h4>
+                    <ul>
+                      <li>各ページに何を載せるか箇条書きで書き出す</li>
+                      <li>必須の情報と、あれば良い情報を分ける</li>
+                      <li>ページの優先順位を決める</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h4 class="h6">ポイント</h4>
+                    <ul>
+                      <li>訪問者が知りたい情報を優先する</li>
+                      <li>情報が多すぎると見づらくなるので厳選する</li>
+                      <li>共通する要素（ヘッダー、フッターなど）も意識する</li>
+                    </ul>
 
-    <section id="step3">
-      <h3>ステップ3：ページ構成を考える</h3>
+                    <h4 class="h6">成果物</h4>
+                    <ul class="mb-0">
+                      <li>各ページの掲載項目リスト</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <h4>目的</h4>
-      <p>各ページに必要な要素を洗い出す</p>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step4">
+                <span class="badge bg-primary me-2">4</span> 各ページの掲載内容を考える
+              </button>
+            </h3>
+            <div id="step4" class="accordion-collapse collapse" data-bs-parent="#stepsAccordion">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h4 class="h6">目的</h4>
+                    <p>各項目の具体的な内容を決める</p>
 
-      <h4>やること</h4>
-      <ul>
-        <li>各ページに何を載せるか箇条書きで書き出す</li>
-        <li>必須の情報と、あれば良い情報を分ける</li>
-        <li>ページの優先順位を決める</li>
-      </ul>
+                    <h4 class="h6">やること</h4>
+                    <ul>
+                      <li>見出しの文言を決める</li>
+                      <li>説明文の内容を考える</li>
+                      <li>必要な画像やリンクを洗い出す</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h4 class="h6">ポイント</h4>
+                    <ul>
+                      <li>実際に文章を書いてみる</li>
+                      <li>長すぎず、わかりやすい表現を心がける</li>
+                      <li>画像は後から用意しても良い</li>
+                    </ul>
 
-      <h4>ポイント</h4>
-      <ul>
-        <li>訪問者が知りたい情報を優先する</li>
-        <li>情報が多すぎると見づらくなるので厳選する</li>
-        <li>共通する要素（ヘッダー、フッターなど）も意識する</li>
-      </ul>
+                    <h4 class="h6">成果物</h4>
+                    <ul class="mb-0">
+                      <li>各ページの詳細な内容</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <h4>成果物</h4>
-      <ul>
-        <li>各ページの掲載項目リスト</li>
-      </ul>
-    </section>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step5">
+                <span class="badge bg-primary me-2">5</span> 各ページの内容を構造化する
+              </button>
+            </h3>
+            <div id="step5" class="accordion-collapse collapse" data-bs-parent="#stepsAccordion">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h4 class="h6">目的</h4>
+                    <p>内容をHTML化しやすいように構造化する</p>
 
-    <section id="step4">
-      <h3>ステップ4：各ページの掲載内容を考える</h3>
+                    <h4 class="h6">やること</h4>
+                    <ul>
+                      <li>見出し、段落、リストなどに分類する</li>
+                      <li>情報の階層を明確にする</li>
+                      <li>HTMLタグとの対応を意識する</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h4 class="h6">ポイント</h4>
+                    <ul>
+                      <li>大見出し → 中見出し → 小見出しの階層</li>
+                      <li>箇条書きにできるものはリストに</li>
+                      <li>関連するものをグループ化</li>
+                    </ul>
 
-      <h4>目的</h4>
-      <p>各項目の具体的な内容を決める</p>
+                    <h4 class="h6">成果物</h4>
+                    <ul class="mb-0">
+                      <li>構造化された内容一覧</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <h4>やること</h4>
-      <ul>
-        <li>見出しの文言を決める</li>
-        <li>説明文の内容を考える</li>
-        <li>必要な画像やリンクを洗い出す</li>
-      </ul>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step6">
+                <span class="badge bg-primary me-2">6</span> パーツを考える
+              </button>
+            </h3>
+            <div id="step6" class="accordion-collapse collapse" data-bs-parent="#stepsAccordion">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h4 class="h6">目的</h4>
+                    <p>ページ共通で使うパーツ（ヘッダー、フッターなど）を設計する</p>
 
-      <h4>ポイント</h4>
-      <ul>
-        <li>実際に文章を書いてみる</li>
-        <li>長すぎず、わかりやすい表現を心がける</li>
-        <li>画像は後から用意しても良い</li>
-      </ul>
+                    <h4 class="h6">やること</h4>
+                    <ul>
+                      <li>ヘッダーに載せる内容を決める</li>
+                      <li>フッターに載せる内容を決める</li>
+                      <li>ナビゲーションの項目を決める</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h4 class="h6">ポイント</h4>
+                    <ul>
+                      <li>全ページで統一したデザインにする</li>
+                      <li>ナビゲーションはわかりやすく</li>
+                      <li>必要最低限の情報に絞る</li>
+                    </ul>
 
-      <h4>成果物</h4>
-      <ul>
-        <li>各ページの詳細な内容</li>
-      </ul>
-    </section>
+                    <h4 class="h6">成果物</h4>
+                    <ul class="mb-0">
+                      <li>ヘッダーの内容</li>
+                      <li>フッターの内容</li>
+                      <li>ナビゲーションの項目</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    <section id="step5">
-      <h3>ステップ5：各ページの内容を構造化する</h3>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step7">
+                <span class="badge bg-success me-2">7</span> HTMLファイルを作る
+              </button>
+            </h3>
+            <div id="step7" class="accordion-collapse collapse" data-bs-parent="#stepsAccordion">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h4 class="h6">目的</h4>
+                    <p>構造化した内容をHTMLに変換する</p>
 
-      <h4>目的</h4>
-      <p>内容をHTML化しやすいように構造化する</p>
+                    <h4 class="h6">やること</h4>
+                    <ul>
+                      <li>HTMLファイルを作成する</li>
+                      <li>基本的な構造（html, head, body）を書く</li>
+                      <li>構造化した内容をタグで囲む</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h4 class="h6">ポイント</h4>
+                    <ul>
+                      <li>まずは見た目を気にせず構造だけ作る</li>
+                      <li>タグの閉じ忘れに注意</li>
+                      <li>インデント（字下げ）を使って読みやすく</li>
+                    </ul>
 
-      <h4>やること</h4>
-      <ul>
-        <li>見出し、段落、リストなどに分類する</li>
-        <li>情報の階層を明確にする</li>
-        <li>HTMLタグとの対応を意識する</li>
-      </ul>
+                    <h4 class="h6">成果物</h4>
+                    <ul class="mb-0">
+                      <li>各ページのHTMLファイル</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <h4>ポイント</h4>
-      <ul>
-        <li>大見出し → 中見出し → 小見出しの階層</li>
-        <li>箇条書きにできるものはリストに</li>
-        <li>関連するものをグループ化</li>
-      </ul>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step8">
+                <span class="badge bg-warning text-dark me-2">8</span> パーツのデザインを考える
+              </button>
+            </h3>
+            <div id="step8" class="accordion-collapse collapse" data-bs-parent="#stepsAccordion">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h4 class="h6">目的</h4>
+                    <p>各パーツの見た目を設計する</p>
 
-      <h4>成果物</h4>
-      <ul>
-        <li>構造化された内容一覧</li>
-      </ul>
-    </section>
+                    <h4 class="h6">やること</h4>
+                    <ul>
+                      <li>配色を決める（メインカラー、アクセントカラー）</li>
+                      <li>フォントを決める</li>
+                      <li>レイアウトを決める</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h4 class="h6">ポイント</h4>
+                    <ul>
+                      <li>色は3色程度に抑える</li>
+                      <li>読みやすさを最優先</li>
+                      <li>参考サイトを見て学ぶ</li>
+                    </ul>
 
-    <section id="step6">
-      <h3>ステップ6：パーツを考える</h3>
+                    <h4 class="h6">成果物</h4>
+                    <ul class="mb-0">
+                      <li>配色案</li>
+                      <li>デザインの方針</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <h4>目的</h4>
-      <p>ページ共通で使うパーツ（ヘッダー、フッターなど）を設計する</p>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step9">
+                <span class="badge bg-danger me-2">9</span> CSSを作る
+              </button>
+            </h3>
+            <div id="step9" class="accordion-collapse collapse" data-bs-parent="#stepsAccordion">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h4 class="h6">目的</h4>
+                    <p>HTMLにスタイルを適用して見た目を整える</p>
 
-      <h4>やること</h4>
-      <ul>
-        <li>ヘッダーに載せる内容を決める</li>
-        <li>フッターに載せる内容を決める</li>
-        <li>ナビゲーションの項目を決める</li>
-      </ul>
+                    <h4 class="h6">やること</h4>
+                    <ul>
+                      <li>CSSファイルを作成する</li>
+                      <li>HTMLから読み込む</li>
+                      <li>各要素にスタイルを適用する</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h4 class="h6">ポイント</h4>
+                    <ul>
+                      <li>少しずつ適用して、都度確認する</li>
+                      <li>ブラウザの開発者ツールを活用する</li>
+                      <li>完璧を目指さず、まずは形にする</li>
+                    </ul>
 
-      <h4>ポイント</h4>
-      <ul>
-        <li>全ページで統一したデザインにする</li>
-        <li>ナビゲーションはわかりやすく</li>
-        <li>必要最低限の情報に絞る</li>
-      </ul>
+                    <h4 class="h6">成果物</h4>
+                    <ul class="mb-0">
+                      <li>CSSファイル</li>
+                      <li>スタイルが適用されたWebサイト</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <h4>成果物</h4>
-      <ul>
-        <li>ヘッダーの内容</li>
-        <li>フッターの内容</li>
-        <li>ナビゲーションの項目</li>
-      </ul>
-    </section>
+        </div>
+      </section>
 
-    <section id="step7">
-      <h3>ステップ7：HTMLファイルを作る</h3>
-
-      <h4>目的</h4>
-      <p>構造化した内容をHTMLに変換する</p>
-
-      <h4>やること</h4>
-      <ul>
-        <li>HTMLファイルを作成する</li>
-        <li>基本的な構造（html, head, body）を書く</li>
-        <li>構造化した内容をタグで囲む</li>
-      </ul>
-
-      <h4>ポイント</h4>
-      <ul>
-        <li>まずは見た目を気にせず構造だけ作る</li>
-        <li>タグの閉じ忘れに注意</li>
-        <li>インデント（字下げ）を使って読みやすく</li>
-      </ul>
-
-      <h4>成果物</h4>
-      <ul>
-        <li>各ページのHTMLファイル</li>
-      </ul>
-    </section>
-
-    <section id="step8">
-      <h3>ステップ8：パーツのデザインを考える</h3>
-
-      <h4>目的</h4>
-      <p>各パーツの見た目を設計する</p>
-
-      <h4>やること</h4>
-      <ul>
-        <li>配色を決める（メインカラー、アクセントカラー）</li>
-        <li>フォントを決める</li>
-        <li>レイアウトを決める</li>
-      </ul>
-
-      <h4>ポイント</h4>
-      <ul>
-        <li>色は3色程度に抑える</li>
-        <li>読みやすさを最優先</li>
-        <li>参考サイトを見て学ぶ</li>
-      </ul>
-
-      <h4>成果物</h4>
-      <ul>
-        <li>配色案</li>
-        <li>デザインの方針</li>
-      </ul>
-    </section>
-
-    <section id="step9">
-      <h3>ステップ9：CSSを作る</h3>
-
-      <h4>目的</h4>
-      <p>HTMLにスタイルを適用して見た目を整える</p>
-
-      <h4>やること</h4>
-      <ul>
-        <li>CSSファイルを作成する</li>
-        <li>HTMLから読み込む</li>
-        <li>各要素にスタイルを適用する</li>
-      </ul>
-
-      <h4>ポイント</h4>
-      <ul>
-        <li>少しずつ適用して、都度確認する</li>
-        <li>ブラウザの開発者ツールを活用する</li>
-        <li>完璧を目指さず、まずは形にする</li>
-      </ul>
-
-      <h4>成果物</h4>
-      <ul>
-        <li>CSSファイル</li>
-        <li>スタイルが適用されたWebサイト</li>
-      </ul>
-    </section>
-
+    </div>
   </main>
 
-  <footer>
-    <nav>
-      <a href="contact.html">お問合せ</a>
-    </nav>
-    <p>&copy; HTML、CSS、JSを理解するための学習教材</p>
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container text-center">
+      <nav class="mb-3">
+        <a href="contact.html" class="text-white">お問合せ</a>
+      </nav>
+      <p class="mb-0">&copy; HTML、CSS、JSを理解するための学習教材</p>
+    </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
